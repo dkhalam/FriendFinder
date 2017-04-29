@@ -13,29 +13,28 @@
 	
 		<h1>Take the Survey!</h1>
 		<hr>
-		<form role="form" id="survey">
-			<h2>About You</h2>
-			<div class="form-group">
-				<label for="usr">Name: (Required)</label>
-				<input type="text" class="form-control" id="name">
-			</div>
-			<div class="form-group">
-				<label for="pic">Link for Photo: (Required)</label>
-				<input type="text" class="form-control" id="pic">
-			</div>
-			<hr>
-			<h2>Rate on a scale from 1 - 5 how strongly you agree with these statements:</h2>
+		
+		<h2>About You</h2>
+		<h4>Name (Required)</h4>		
+		<input type="text" class="form-control" id="name" required>
+			
+		<h4>Link to Photo Image (Required)</h4>		
+		<input type="text" class="form-control" id="photo" required>
+			
+		<hr>
+		<h2>Rate on a scale from 1 - 5 how strongly you agree with these statements:</h2>
 
 			<div class="row col-lg-12">
 				<h3>Question 1</h3>
 				<h4>I often take long walks on the beach in my speedo.</h4>
-				<div class="form-group col-xs-3">
-					<select class="form-control" id="quest1">
-						<option>1 (Strongly Disagree)</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5 (Strongly Agree)</option>
+				<div class="col-xs-3">
+					<select data-placeholder="" class="chosen-select" id="q1" name="ques1">
+						<option value=""></option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
 					</select>
 				</div>
 			</div>
@@ -43,13 +42,14 @@
 			<div class="row col-lg-12">
 				<h3>Question 2</h3>
 				<h4>I like to cook SPAM in my free time</h4>
-				<div class="form-group col-xs-3">
-					<select class="form-control" id="quest2">
-						<option>1 (Strongly Disagree)</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5 (Strongly Agree)</option>
+				<div class="col-xs-3">
+					<select data-placeholder="" class="chosen-select" id="q2" name="ques2">
+						<option value=""></option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
 					</select>
 				</div>
 			</div>
@@ -57,13 +57,14 @@
 			<div class="row col-lg-12">
 				<h3>Question 3</h3>
 				<h4>I would rather attend a Cubs game than a White Sox game</h4>
-				<div class="form-group col-xs-3">
-					<select class="form-control" id="quest3">
-						<option>1 (Strongly Disagree)</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5 (Strongly Agree)</option>
+				<div class="col-xs-3">
+					<select data-placeholder="" class="chosen-select" id="q3" name="ques3">
+						<option value=""></option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
 					</select>
 				</div>
 			</div>
@@ -71,13 +72,14 @@
 			<div class="row col-lg-12">
 				<h3>Question 4</h3>
 				<h4>For lunch, I tend to lean towards healthier options such as Kale smoothies versus mini corn dogs</h4>
-				<div class="form-group col-xs-3">
-					<select class="form-control" id="quest4">
-						<option>1 (Strongly Disagree)</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5 (Strongly Agree)</option>
+				<div class="col-xs-3">
+					<select data-placeholder="" class="chosen-select" id="q4" name="ques4">
+						<option value=""></option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
 					</select>
 				</div>
 			</div>
@@ -85,13 +87,14 @@
 			<div class="row col-lg-12">
 				<h3>Question 5</h3>
 				<h4>I would rather drink a craft beer as opposed to a Bud Light-type product</h4>
-				<div class="form-group col-xs-3">
-					<select class="form-control" id="quest5">
-						<option>1 (Strongly Disagree)</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5 (Strongly Agree)</option>
+				<div class="col-xs-3">
+					<select data-placeholder="" class="chosen-select" id="q5" name="ques5">
+						<option value=""></option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
 					</select>
 				</div>
 			</div>
@@ -99,13 +102,14 @@
 			<div class="row col-lg-12">
 				<h3>Question 6</h3>
 				<h4>I like to go hiking in sweltering heat because it makes me more tan</h4>
-				<div class="form-group col-xs-3">
-					<select class="form-control" id="quest6">
-						<option>1 (Strongly Disagree)</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5 (Strongly Agree)</option>
+				<div class="col-xs-3">
+					<select data-placeholder="" class="chosen-select" id="q6" name="ques6">
+						<option value=""></option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
 					</select>
 				</div>
 			</div>
@@ -113,13 +117,14 @@
 			<div class="row col-lg-12">
 				<h3>Question 7</h3>
 				<h4>Kendrick Lamar is far and away the best rapper of this generation</h4>
-				<div class="form-group col-xs-3">
-					<select class="form-control" id="quest7">
-						<option>1 (Strongly Disagree)</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5 (Strongly Agree)</option>
+				<div class="col-xs-3">
+					<select data-placeholder="" class="chosen-select" id="q7" name="ques7">
+						<option value=""></option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
 					</select>
 				</div>
 			</div>
@@ -127,13 +132,14 @@
 			<div class="row col-lg-12">
 				<h3>Question 8</h3>
 				<h4>I would rather be in a lazy river than on a water slide on most days</h4>
-				<div class="form-group col-xs-3">
-					<select class="form-control" id="quest8">
-						<option>1 (Strongly Disagree)</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5 (Strongly Agree)</option>
+				<div class="col-xs-3">
+					<select data-placeholder="" class="chosen-select" id="q8" name="ques8">
+						<option value=""></option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
 					</select>
 				</div>
 			</div>
@@ -141,13 +147,14 @@
 			<div class="row col-lg-12">
 				<h3>Question 9</h3>
 				<h4>I really enjoy going to the gym and living an active lifestyle, and my goal is to look like The Rock</h4>
-				<div class="form-group col-xs-3">
-					<select class="form-control" id="quest9">
-						<option>1 (Strongly Disagree)</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5 (Strongly Agree)</option>
+				<div class="col-xs-3">
+					<select data-placeholder="" class="chosen-select" id="q9" name="ques9">
+						<option value=""></option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
 					</select>
 				</div>
 			</div>
@@ -155,34 +162,41 @@
 			<div class="row col-lg-12">
 				<h3>Question 10</h3>
 				<h4>If I were the president, I would create a fund providing for college students to travel all around the globe for 6 months free of charge</h4>
-				<div class="form-group col-xs-3">
-					<select class="form-control" id="quest10">
-						<option>1 (Strongly Disagree)</option>
-						<option>2</option>
-						<option>3</option>
-						<option>4</option>
-						<option>5 (Strongly Agree)</option>
+				<div class="col-xs-3">
+					<select data-placeholder="" class="chosen-select" id="q10" name="ques10">
+						<option value=""></option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
 					</select>
 				</div>
 			</div>
 			
 			<div class= "row col-lg-4 col-lg-offset-4">
-			<button type="button" class="btn btn-success btn-block" id="submit">Submit</button>
+			<button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i></button>
 			</div>
-	
-		</form>
 
-		<!-- Modal -->
-  <div class="modal fade" id="friend-modal" role="dialog">
+  <div class="footer">
+  	<br>
+  	<br>
+  </div>
+	</div>
+
+	<!-- Modal -->
+  <div class="modal fade" id="resultsModal" role="dialog">
     <div class="modal-dialog">
     
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title"></h4>
+          <h4 class="modal-title">Best Match</h4>
         </div>
         <div class="modal-body">
+        	<h2 id="matchName"></h2>
+        	<img id="matchImg" src="" alt="">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -191,79 +205,129 @@
       
     </div>
   </div>
-  <div class="footer">
-  	<br>
-  	<br>
-  </div>
-	</div>
 <script type="text/javascript">
 		 
 	$('#submit').on("click", function(){
 		//check to make sure the required fields are filled out
-		var validEntry;
-		if($("#name").val().trim() === ''){
-			alert('Enter a name before you continue!');
-		}
-		else if($("#pic").val().trim() === ''){
-			alert('Enter a link to photo before you continue!');
-		}
-		else{
-			//empty array to hold survey questions
-			var answerArray = [];
-			//loop to push the answers from survey to the array (NEED TO UPDATE i< AS QUESTIONS ARE ADDED)
-			for(i=1; i<11; i++){
-				answerArray.push(parseInt($('#quest' + i).val().substring(0,1)));
-			}
-			//creating an object to hold the newly entered information
-			var newFriend = 
-			{
-				name: $("#name").val().trim(),
-				photo: $("#pic").val().trim(),
-				scores: answerArray
-			};
-			
-			//add the new info to the friend array
-			$.post(currentURL + "/api/friends", newFriend,
-		    function(data){});
-			//access our array of potential friends so we can analyze it for the best match
-			$.ajax({url: currentURL + "/api/friends", method: "GET"}).done(function(res){
-					
-				var bestFriend;
-				var currentBest = 100;
-				var differenceArray = [];
-				//loops through all friends other than the new one
-				for(i=0; i < res.length - 1; i++){
-					//compares the values from the survey questions and pushes the differences to the difference array
-					for(j=0; j<10; j++){
-						var currentDifference = newFriend.scores[j] - res[i].scores[j];
-						differenceArray.push(Math.abs(currentDifference));
-					}
-					//adds the values in the array
-					var difference = differenceArray.reduce(add, 0);
-					//compare, ensure a best match
-					if (difference < currentBest) {
-						bestFriend = res[i];
-						currentBest = difference;
-						differenceArray = [];
-					}
-					else {
-						differenceArray =[];
-					}
-					
+		// capture form inputs
+		function validateForm() {
+			var isValid = true;
+			$(".form-control").each(function() {
+				if ($(this).val() == "") {
+					isValid = false;
 				}
-				//set up the display for the modal
-				var friendName = '<h4>' + bestFriend.name + '<h4>';
-				var friendPic = '<img width="300px" src=' + bestFriend.photo + '>';
-				//show the modal
-				$('#friend-modal').modal('show');
-				$('#friend-modal h4').html(friendName);
-				$('.modal-body').html(friendPic);
-				//clear the entries
-				$('#survey')[0].reset();
-				
 			});
+
+			$(".chosen-select").each(function() {
+
+				if ($(this).val() == "") {
+					isValid = false;
+				}
+			});
+			return isValid;
 		}
-return false;
+
+		// if all required fields are filled
+		if (validateForm()) {
+			// create an object for users data
+			var userData = {
+				name: $("#name").val(),
+				photo: $("#photo").val(),
+				scores: [
+					$("#q1").val(),
+					$("#q2").val(),
+					$("#q3").val(),
+					$("#q4").val(),
+					$("#q5").val(),
+					$("#q6").val(),
+					$("#q7").val(),
+					$("#q8").val(),
+					$("#q9").val(),
+					$("#q10").val(),
+				]
+			};
+
+			// grab website url
+			var currentURL = window.location.origin;
+
+			// AJAX post the data to the friends API
+			$.post(currentURL + "/api/friends", userData, function(data) {
+
+				$("#resultsModal").modal("toggle");
+				alert("working");
+		    });
+
+		} else {
+			alert("Fill out all fields before submitting!");
+		}
+
+		return false;
+
+
+		// var validEntry;
+		// if($("#name").val().trim() === ''){
+		// 	alert('Enter a name before you continue!');
+		// }
+		// else if($("#pic").val().trim() === ''){
+		// 	alert('Enter a link to photo before you continue!');
+		// }
+		// else{
+		// 	//empty array to hold survey questions
+		// 	var answerArray = [];
+		// 	//loop to push the answers from survey to the array (NEED TO UPDATE i< AS QUESTIONS ARE ADDED)
+		// 	for(i=1; i<11; i++){
+		// 		answerArray.push(parseInt($('#quest' + i).val().substring(0,1)));
+		// 	}
+		// 	//creating an object to hold the newly entered information
+		// 	var newFriend = 
+		// 	{
+		// 		name: $("#name").val().trim(),
+		// 		photo: $("#pic").val().trim(),
+		// 		scores: answerArray
+		// 	};
+			
+		// 	//add the new info to the friend array
+		// 	$.post(currentURL + "/api/friends", newFriend,
+		//     function(data){});
+		// 	//access our array of potential friends so we can analyze it for the best match
+		// 	$.ajax({url: currentURL + "/api/friends", method: "GET"}).done(function(res){
+					
+		// 		var bestFriend;
+		// 		var currentBest = 100;
+		// 		var differenceArray = [];
+		// 		//loops through all friends other than the new one
+		// 		for(i=0; i < res.length - 1; i++){
+		// 			//compares the values from the survey questions and pushes the differences to the difference array
+		// 			for(j=0; j<10; j++){
+		// 				var currentDifference = newFriend.scores[j] - res[i].scores[j];
+		// 				differenceArray.push(Math.abs(currentDifference));
+		// 			}
+		// 			//adds the values in the array
+		// 			var difference = differenceArray.reduce(add, 0);
+		// 			//compare, ensure a best match
+		// 			if (difference < currentBest) {
+		// 				bestFriend = res[i];
+		// 				currentBest = difference;
+		// 				differenceArray = [];
+		// 			}
+		// 			else {
+		// 				differenceArray =[];
+		// 			}
+					
+		// 		}
+		// 		//set up the display for the modal
+		// 		var friendName = '<h4>' + bestFriend.name + '<h4>';
+		// 		var friendPic = '<img width="300px" src=' + bestFriend.photo + '>';
+		// 		//show the modal
+		// 		$('#friend-modal').modal('show');
+		// 		$('#friend-modal h4').html(friendName);
+		// 		$('.modal-body').html(friendPic);
+		// 		//clear the entries
+		// 		$('#survey')[0].reset();
+				
+		// 	});
+		
+// return false;
 });
 
 </script>
